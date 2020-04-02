@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<questions>
+  <question>
+    <id>1</id>
+    <item>Was ist ein Molch für eine Tierart?</item>
+    <response_1>Ein Reptil</response_1>
+    <response_2>Ein Fisch</response_2>
+    <response_3>Ein Schwanzlurch</response_3>
+    <resolving>3</resolving>
+    <score>50</score>
+  </question>
+  <question>
+    <id>2</id>
+    <item>Warum können Fliegen fliegen?</item>
+    <response_1>Sie haben Flügel</response_1>
+    <response_2>Sie sind psionisch</response_2>
+    <response_3>Sie werden vom Wind getragen</response_3>
+    <resolving>1</resolving>
+    <score>1</score>
+  </question>
+  <question>
+    <id>3</id>
+    <item>Was ist ein Locher für ein Gerät?</item>
+    <response_1>Eine Waffer der USA</response_1>
+    <response_2>Ein Gerät zum durchstanzen von Papier</response_2>
+    <response_3>Ein Teil vom Reifen</response_3>
+    <resolving>2</resolving>
+    <score>1</score>
+  </question>  
+  <question>
+    <id>4</id>
+    <item>Was macht ein Zerspanner?</item>
+    <response_1>er bringt Energie durcheinander</response_1>
+    <response_2>er dreht und fräst</response_2>
+    <response_3>er massiert</response_3>
+    <resolving>2</resolving>
+    <score>5</score>
+  </question>
+   <question>
+    <id>5</id>
+    <item>Was ist eine Quersumme für eine Zahl?</item>
+    <response_1>Summe der Ziffern einer mehrstelligen Zahl</response_1>
+    <response_2>eine gebrochene Zahl</response_2>
+    <response_3>Irgendwas mit Addition</response_3>
+    <resolving>1</resolving>
+    <score>5</score>
+  </question>
+</questions>
