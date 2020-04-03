@@ -1,13 +1,14 @@
 ## To do
 
-        > add score to globalScore
-        > go to evaluation page
-        > show values there
+        > save scores into database, ask for username
+        > evaluation page to highscore page
+        > show highscore page
 
 ## Error
 
-	> operator does not work yet
+	> none
 
 ## Hints
 
-	> app stop's on this page
+        > none
+	
