@@ -1,5 +1,9 @@
 <?php 
     session_start();
+
+    //Dependencies
+    include('./include/config.inc.php');
+    include('./include/write.inc.php');
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -33,6 +37,7 @@
         
             <div class="row">
                 <div class="col-lg-4">
+                    <h2>Punktzahl</h2>
                     <?php 
                     
                         if (isset($_SESSION['score'])) {
@@ -44,6 +49,7 @@
                     ?>
                 </div>
                 <div class="col-lg-4">
+                    <h2>Richtige Antworten</h2>
                     <?php 
                     if (isset($_SESSION['rightAnswers'])) {
                         echo '<p>' . $_SESSION['rightAnswers'] . ' Richtige Antworten </p><br />';
@@ -54,6 +60,7 @@
                     ?>
                 </div>
                 <div class="col-lg-4">
+                    <h2>Falsche Antworten</h2>
                     <?php
                     if (isset($_SESSION['falseAnswers'])) {
                         echo '<p>' . $_SESSION['falseAnswers'] . ' Flasche Antworten </p><br />'; 
@@ -62,7 +69,35 @@
                     }
                     ?>
                 </div>
-            </div>	
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <label for="name">Ihr Name</label><input id="name" type="text" minlength="3" maxlength="8" require name="name" /><br />
+                        <input type="submit" name="submit" value="Senden" />
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <?php 
+                        
+                        if (isset($_POST['submit'])) {
+
+                            if (isset($_POST['name'])) echo '<p><strong> Tank you ' . $_POST['name'] . '!</strong></p>';
+
+                            writeXML($xmlHighscore, $_POST['name'], $_SESSION['score'], $_SESSION['rightAnswers'], $_SESSION['falseAnswers'], $_SESSION['userip']);
+
+                            echo '<p class="fileupdate-msg">File was updated</p>';
+                            if (isset($_SESSION['userip'])) echo $_SESSION['userip'];
+                            $_SESSION = array();
+                            session_destroy();
+
+                        }
+                    ?>
+                </div>
+            </div>
+
         </div>
         
         <footer>
@@ -84,8 +119,3 @@
     </body>
     
 </html>
-
-<?php 
-    $_SESSION = array();
-    session_destroy();
-?>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<player>
+            <id>0</id>
+            <name>Hans</name>
+            <score>52</score>
+            <right>4</right>
+            <false>1</false>
+            <ip>::1</ip>
+</player>

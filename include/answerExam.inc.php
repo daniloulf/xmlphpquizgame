@@ -5,6 +5,7 @@ include('xmlOpen.inc.php');
 include('helpers.inc.php');
 
 //Session Setup
+session_id('game' . random_int(1, 999999));
 session_start();
 $_SESSION['userip'] = clientIP();
 
