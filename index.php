@@ -14,7 +14,7 @@ include('./include/questionsShow.inc.php');
         <meta name="description" content=""> 
         <meta name="author" content="Danilo Ulf Mattick">
 
-        <title>PHP Quiz System</title>
+        <title>XML PHP Quiz System</title>
 
         <link href="./css/bootstrap.min.css" rel="stylesheet" />
         <link href="./css/bootstrap-theme.min.css" rel="stylesheet" />

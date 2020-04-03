@@ -24,22 +24,6 @@ $counted = count($xml_database);
 $error_msg = false;
 $globalScore = 0;
 
-/*
-    TODO:
-    *****
-        > add score to globalScore
-        > go to evaluation page
-        > show values there
-
-    ERRORS:
-    *******
-        > operator does not work yet
-
-    HINT:
-    *****
-        > app stop's on this page
-*/
-
 //generate Array control
 foreach($xml_database->question as $question) {
     $id = $question->id;
@@ -65,24 +49,15 @@ while($foo < $counted) {
     if ($answer_val[$foo] != $control_val[$foo]) {
         $falseAnswers++;
     } else {
-        //$globalScore = $globalScore + $score_val;
+        $globalScore = $globalScore + $score_val[$foo];
         $rightAnswers++;
     }
 
     $foo++;
-    
-    //Debug
-    echo $foo . '<br />';
-    //echo $answer_val[$foo] . '<br />';
-    //echo $control_val[$foo] . '<br />';
 }
 
-$_SESSION['score'] = $globalScore;
-$_SESSION['rightAnswers'] = $rightAnswers;
-$_SESSION['falseAnswers'] = $falseAnswers;
+if (isset($globalScore)) $_SESSION['score'] = $globalScore;
+if (isset($rightAnswers)) $_SESSION['rightAnswers'] = $rightAnswers;
+if (isset($falseAnswers)) $_SESSION['falseAnswers'] = $falseAnswers;
 
-echo $_SESSION['score'] . ' Score <br />';
-echo $_SESSION['rightAnswers'] . ' Richtige Antworten <br />';
-echo $_SESSION['falseAnswers'] . ' Flasche Antworten <br />';
-
-session_destroy();
+header('Location:../evaluation.php');
