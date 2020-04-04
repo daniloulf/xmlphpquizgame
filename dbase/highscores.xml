@@ -1,9 +1,22 @@
-<?xml version="1.0"?>
-<player>
-            <id>0</id>
-            <name>Hans</name>
-            <score>52</score>
-            <right>4</right>
-            <false>1</false>
-            <ip>::1</ip>
-</player>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<players>
+    <player>
+        <id>1</id>
+        <name>Ulf</name>
+        <date>today</date>
+        <score>500</score>
+        <right>1000</right>
+        <false>200</false>
+        <ip>127.0.0.1</ip>
+    </player>
+    <player>
+        <id>2</id>
+        <name>Mein Nam</name>
+        <date>04.04.2020 - 18:11</date>
+        <score>57</score>
+        <right>4</right>
+        <false>1</false>
+        <ip>127.0.0.1</ip>
+    </player>
+<player><id>3</id><name>Ulf</name><date>04.04.2020 - 18:14</date><score>0</score><right>0</right><false>5</false><ip>127.0.0.1</ip></player>
+</players>

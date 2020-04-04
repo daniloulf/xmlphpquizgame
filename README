@@ -1,12 +1,11 @@
 ## To do
 
-        > save scores into database, ask for username
         > evaluation page to highscore page
         > show highscore page
 
 ## Error
 
-	> none
+	> double <player> tag in highscores.xml (not solved yet) ++ write.inc.php (seems solved ) // wait, pending
 
 ## Hints
 

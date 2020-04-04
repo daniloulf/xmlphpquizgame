@@ -82,16 +82,40 @@
                 <div class="col-lg-6">
                     <?php 
                         
-                        if (isset($_POST['submit'])) {
+                        if (
+                            isset($_POST['submit']) && 
+                            isset($_POST['name']) && 
+                            isset($_SESSION['score']) && 
+                            isset($_SESSION['rightAnswers']) && 
+                            isset($_SESSION['falseAnswers']) &&
+                            isset($_SESSION['userip'])
+                            ) {
 
-                            if (isset($_POST['name'])) echo '<p><strong> Tank you ' . $_POST['name'] . '!</strong></p>';
+                                if (isset($_POST['name'])) {
+                                        echo '<p><strong> Tank you ' . $_POST['name'] . '!</strong></p>';
 
-                            writeXML($xmlHighscore, $_POST['name'], $_SESSION['score'], $_SESSION['rightAnswers'], $_SESSION['falseAnswers'], $_SESSION['userip']);
+                                        writeXML($xmlHighscore, $_POST['name'], $_SESSION['score'], $_SESSION['rightAnswers'], $_SESSION['falseAnswers'], $_SESSION['userip']);
 
-                            echo '<p class="fileupdate-msg">File was updated</p>';
-                            if (isset($_SESSION['userip'])) echo $_SESSION['userip'];
-                            $_SESSION = array();
-                            session_destroy();
+                                        echo '<p class="fileupdate-msg">Ihre Daten wurden gespeichert! Vielen Dank fürs Spielen.</p>';
+
+                                        $_SESSION = array();
+                                        session_destroy();
+                                    } else {
+
+                                        echo "Bitte geben Sie einen Namen oder Nickname ein.";
+
+                                    }
+
+                        } elseif (
+                            !isset($_POST['submit']) && 
+                            !isset($_POST['name']) && 
+                            !isset($_SESSION['score']) && 
+                            !isset($_SESSION['rightAnswers']) && 
+                            !isset($_SESSION['falseAnswers']) &&
+                            !isset($_SESSION['userip'])
+                        ) {
+
+                            echo "<p>Die Session ist abgelaufen und die Daten wurden gelöscht. Sollten Ihre Eingaben nicht gespeichert worden sein, wenden Sie sich bitte mit einem Screenshot der Ihren Erfolg dokumentiert an den <strong>webmaster.</strong></p>"; 
 
                         }
                     ?>

@@ -16,9 +16,9 @@ $score_val = array();
 $rightAnswers = 0;
 $falseAnswers = 0;
 
+$foo = 0;
 $i = 0;
 $j = 0;
-$foo = 0;
 
 $xml_database = xmlOpen('.'.$xmlDBfile);
 $counted = count($xml_database);
@@ -33,15 +33,18 @@ foreach($xml_database->question as $question) {
 
     $control = $id . '-' . $resolving;
     //generated array
-    $control_val[$i++] = $control;
+    $control_val[$i] = $control;
     $score_val[$i] = $score;
+
+    $i++;
 }
 
 //generate Array from user input
 foreach($_POST as $name => $value) {
     if($value != $submitButtonVal) {
         //generated array
-        $answer_val[$j++] = $value;
+        $answer_val[$j] = $value;
+        $j++;
     } 
 }
 
@@ -50,7 +53,7 @@ while($foo < $counted) {
     if ($answer_val[$foo] != $control_val[$foo]) {
         $falseAnswers++;
     } else {
-        $globalScore = $globalScore + $score_val[$foo];
+        $globalScore += $score_val[$foo];
         $rightAnswers++;
     }
 
