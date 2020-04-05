@@ -14,9 +14,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content=""> 
-        <meta name="author" content="Danilo Ulf Mattick">
+        <meta name="author" content="<?php echo AUTHOR; ?>">
 
-        <title>XML PHP Quiz System</title>
+        <title><?php echo HEADPAGETITLE; ?></title>
 
         <link href="./css/bootstrap.min.css" rel="stylesheet" />
         <link href="./css/bootstrap-theme.min.css" rel="stylesheet" />
@@ -28,44 +28,46 @@
         <header>
 			<div class="container">
 				<h1>
-					dum//planet Quiz Spass
+                    <?php echo HEADLINEPAGES; ?>
 				</h1>
 			</div>
         </header>
         
         <div class="content container">
         
+            <h2><?php echo HEADEVALUATION; ?></h2>
+
             <div class="row">
                 <div class="col-lg-4">
-                    <h2>Punktzahl</h2>
+                    <h2><?php echo HEADTEXTSCORE; ?></h2>
                     <?php 
                     
                         if (isset($_SESSION['score'])) {
-                            echo '<p>' . $_SESSION['score'] . ' Score </p><br />';
+                            echo '<p>' . $_SESSION['score'] . ' ' . SCORETEXT . '</p><br />';
                         } else { 
-                            echo '<p>Session ist abgelaufen.</p>'; 
+                            echo SESSIONOVER; 
                         } 
                     
                     ?>
                 </div>
                 <div class="col-lg-4">
-                    <h2>Richtige Antworten</h2>
+                    <h2><?php echo HEADRIGHTANS; ?></h2>
                     <?php 
                     if (isset($_SESSION['rightAnswers'])) {
-                        echo '<p>' . $_SESSION['rightAnswers'] . ' Richtige Antworten </p><br />';
+                        echo '<p>' . $_SESSION['rightAnswers'] . ' '. RIGHTANSWERSTEXT.'</p><br />';
                     } else {
-                        echo '<p>Session ist abgelaufen.</p>'; 
+                        echo SESSIONOVER; 
                     }
                     
                     ?>
                 </div>
                 <div class="col-lg-4">
-                    <h2>Falsche Antworten</h2>
+                    <h2><?php echo HEADFALSEANS; ?></h2>
                     <?php
                     if (isset($_SESSION['falseAnswers'])) {
-                        echo '<p>' . $_SESSION['falseAnswers'] . ' Flasche Antworten </p><br />'; 
+                        echo '<p>' . $_SESSION['falseAnswers'] . ' ' . FALSEANSWERSTEXT . '</p><br />'; 
                     } else {
-                        echo '<p>Session ist abgelaufen.</p>'; 
+                        echo SESSIONOVER; 
                     }
                     ?>
                 </div>
@@ -74,8 +76,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                        <label for="name">Ihr Name</label><input id="name" type="text" minlength="3" maxlength="8" require name="name" /><br />
-                        <input type="submit" name="submit" value="Senden" />
+                        <label for="name"><?php echo LABELNAMETEXT; ?></label><input id="name" type="text" minlength="3" maxlength="8" require name="name" /><br />
+                        <input type="submit" name="submit" value="<?php echo SUBMITNAMEANDDATA; ?>" />
                     </form>
                 </div>
 
@@ -94,15 +96,16 @@
                                 if (isset($_POST['name'])) {
                                         echo '<p><strong> Tank you ' . $_POST['name'] . '!</strong></p>';
 
-                                        writeXML($xmlHighscore, $_POST['name'], $_SESSION['score'], $_SESSION['rightAnswers'], $_SESSION['falseAnswers'], $_SESSION['userip']);
+                                        writeXML(XMLHIGHSCORESAVE, $_POST['name'], $_SESSION['score'], $_SESSION['rightAnswers'], $_SESSION['falseAnswers'], $_SESSION['userip']);
 
-                                        echo '<p class="fileupdate-msg">Ihre Daten wurden gespeichert! Vielen Dank fürs Spielen.</p>';
+                                        echo MSGSUCCESS;
+                                        echo HIGHSCORELINK;
 
                                         $_SESSION = array();
                                         session_destroy();
                                     } else {
 
-                                        echo "Bitte geben Sie einen Namen oder Nickname ein.";
+                                        echo ERRORNONAME;
 
                                     }
 
@@ -116,7 +119,7 @@
                         ) {
 
                             echo "<p>Die Session ist abgelaufen und die Daten wurden gelöscht. Sollten Ihre Eingaben nicht gespeichert worden sein, wenden Sie sich bitte mit einem Screenshot der Ihren Erfolg dokumentiert an den <strong>webmaster.</strong></p>"; 
-
+                            echo HIGHSCORELINK;
                         }
                     ?>
                 </div>
@@ -131,7 +134,7 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <p>&copy; <script>document.write(new Date().getFullYear()); </script> by the Creator &mdash; Alle Rechte vorbehalten!</p>
+                        <?php echo FOOTERTEXT; ?>
 
                     </div>
                 </div>

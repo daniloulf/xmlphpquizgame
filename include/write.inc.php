@@ -10,7 +10,6 @@ function writeXML($xmlfile, $name, $score, $rightA, $falseA, $ip) {
 
     foreach ($xmldbase->player as $key) {
         $id = $key->id;
-        echo $id;
     }
 
     $id = (int)$id + 1;

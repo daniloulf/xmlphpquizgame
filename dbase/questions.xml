@@ -7,7 +7,7 @@
     <response_2>Ein Fisch</response_2>
     <response_3>Ein Schwanzlurch</response_3>
     <resolving>3</resolving>
-    <score>50</score>
+    <score>5</score>
   </question>
   <question>
     <id>2</id>
@@ -21,11 +21,11 @@
   <question>
     <id>3</id>
     <item>Was ist ein Locher für ein Gerät?</item>
-    <response_1>Eine Waffer der USA</response_1>
+    <response_1>Eine Waffe der USA</response_1>
     <response_2>Ein Gerät zum durchstanzen von Papier</response_2>
     <response_3>Ein Teil vom Reifen</response_3>
     <resolving>2</resolving>
-    <score>1</score>
+    <score>2</score>
   </question>  
   <question>
     <id>4</id>
@@ -34,7 +34,7 @@
     <response_2>er dreht und fräst</response_2>
     <response_3>er massiert</response_3>
     <resolving>2</resolving>
-    <score>5</score>
+    <score>4</score>
   </question>
    <question>
     <id>5</id>

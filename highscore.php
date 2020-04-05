@@ -1,7 +1,6 @@
-<?php 
-//Dependencies
-include('./include/config.inc.php');
-include('./include/questionsShow.inc.php');
+<?php
+    //Dependencies
+    include('./include/show_highscore.inc.php');
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -32,18 +31,19 @@ include('./include/questionsShow.inc.php');
         </header>
         
         <div class="content container">
-            <h2><?php echo HEADLINEQUESTIONSLIST ?></h2>
-        	<form id="questionItems" action="./include/answerExam.inc.php" method="post" autocomplete="off">
-        
-				<?php 
-				
-					questions_show(XMLQUESTIONSFILE);
-				
-				?>
-				
-				<input type="submit" id="submit" name="submit" value="<?php echo SUBMITBUTTONVALUE; ?>">
-				
-            </form>
+
+            <h2><?php echo HEADHIGHSCOREPAGE; ?></h2>
+    
+            <div class="row">
+
+                    <?php 
+                    
+                        showHighscore();
+                    
+                    ?>
+               
+            </div>
+
         </div>
         
         <footer>

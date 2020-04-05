@@ -20,7 +20,7 @@ $foo = 0;
 $i = 0;
 $j = 0;
 
-$xml_database = xmlOpen('.'.$xmlDBfile);
+$xml_database = xmlOpen('.'. XMLQUESTIONSFILE);
 $counted = count($xml_database);
 $error_msg = false;
 $globalScore = 0;
@@ -41,7 +41,7 @@ foreach($xml_database->question as $question) {
 
 //generate Array from user input
 foreach($_POST as $name => $value) {
-    if($value != $submitButtonVal) {
+    if($value != SUBMITBUTTONVALUE) {
         //generated array
         $answer_val[$j] = $value;
         $j++;
