@@ -12,10 +12,29 @@
     <player>
         <id>2</id>
         <name>Hans Wurst-Meyer</name>
-        <date>04.04.2020 - 18:11</date>
+        <date>04.04.2020</date>
         <score>57</score>
         <right>4</right>
         <false>1</false>
         <ip>127.0.0.1</ip>
     </player>
-<player><id>3</id><name>Ulf</name><date>05.04.2020 - 14:08</date><score>17</score><right>5</right><false>0</false><ip>::1</ip></player></players>
+    <player>
+        <id>3</id>
+        <name>Der Fuchs</name>
+        <date>05.04.2020</date>
+        <score>17</score>
+        <right>5</right>
+        <false>0</false>
+        <ip>127.0.0.1</ip>
+    </player>
+    <player>
+        <id>4</id>
+        <name>Meister Lampe</name>
+        <date>05.04.2020</date>
+        <score>5</score>
+        <right>1</right>
+        <false>4</false>
+        <ip>127.0.0.1</ip>
+    </player>
+
+</players>

@@ -3,14 +3,14 @@
     include('./include/show_highscore.inc.php');
 ?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="<?php echo SITELANGUAGE; ?>">
     
     <head>
     
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content=""> 
+        <meta name="description" content="<?php echo SITEDISCRIPTION; ?>"> 
         <meta name="author" content="<?php echo AUTHOR; ?>">
 
         <title><?php echo HEADPAGETITLE; ?></title>

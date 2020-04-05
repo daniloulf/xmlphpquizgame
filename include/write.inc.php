@@ -6,7 +6,7 @@ include('xmlOpen.inc.php');
 function writeXML($xmlfile, $name, $score, $rightA, $falseA, $ip) {
 
     $xmldbase = simplexml_load_file($xmlfile);
-    $datestamp = date("d.m.Y - H:i");
+    $datestamp = date(DATEMODE);
 
     foreach ($xmldbase->player as $key) {
         $id = $key->id;

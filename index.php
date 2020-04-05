@@ -2,16 +2,17 @@
 //Dependencies
 include('./include/config.inc.php');
 include('./include/questionsShow.inc.php');
+include('./include/testip.inc.php');
 ?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="<?php echo SITELANGUAGE; ?>">
     
     <head>
     
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content=""> 
+        <meta name="description" content="<?php echo SITEDISCRIPTION; ?>"> 
         <meta name="author" content="<?php echo AUTHOR; ?>">
 
         <title><?php echo HEADPAGETITLE; ?></title>
@@ -35,9 +36,17 @@ include('./include/questionsShow.inc.php');
             <h2><?php echo HEADLINEQUESTIONSLIST ?></h2>
         	<form id="questionItems" action="./include/answerExam.inc.php" method="post" autocomplete="off">
         
-				<?php 
+                <?php 
+                
+                    if (testip()) {
 				
-					questions_show(XMLQUESTIONSFILE);
+                        questions_show(XMLQUESTIONSFILE);
+                        
+                    } else {
+
+                        echo YOUALLREADYPLAYED;
+
+                    }
 				
 				?>
 				
@@ -53,7 +62,7 @@ include('./include/questionsShow.inc.php');
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <?php echo FOOTERTEXT; ?>
+                        <?php echo FOOTERTEXT . HIGHSCORELINK; ?>
 
                     </div>
                 </div>

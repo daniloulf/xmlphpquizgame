@@ -6,14 +6,14 @@
     include('./include/write.inc.php');
 ?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="<?php echo SITELANGUAGE; ?>">
     
     <head>
     
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content=""> 
+        <meta name="description" content="<?php echo SITEDISCRIPTION; ?>"> 
         <meta name="author" content="<?php echo AUTHOR; ?>">
 
         <title><?php echo HEADPAGETITLE; ?></title>
@@ -94,15 +94,24 @@
                             ) {
 
                                 if (isset($_POST['name'])) {
-                                        echo '<p><strong> Tank you ' . $_POST['name'] . '!</strong></p>';
 
-                                        writeXML(XMLHIGHSCORESAVE, $_POST['name'], $_SESSION['score'], $_SESSION['rightAnswers'], $_SESSION['falseAnswers'], $_SESSION['userip']);
+                                        echo THANKYOUFORPLAYING . ' ' . $_POST['name'] . '!</strong></p>';
 
-                                        echo MSGSUCCESS;
-                                        echo HIGHSCORELINK;
+                                        if ($_SESSION['score'] > MINSCORE) {
 
-                                        $_SESSION = array();
-                                        session_destroy();
+                                            writeXML(XMLHIGHSCORESAVE, $_POST['name'], $_SESSION['score'], $_SESSION['rightAnswers'], $_SESSION['falseAnswers'], $_SESSION['userip']);
+
+                                            echo MSGSUCCESS;
+                                            
+                                        } else {
+
+                                            echo TOLESSSCORE;
+
+                                        }
+                                            echo HIGHSCORELINK;
+                                            $_SESSION = array();
+                                            session_destroy();
+                                            
                                     } else {
 
                                         echo ERRORNONAME;
@@ -118,7 +127,7 @@
                             !isset($_SESSION['userip'])
                         ) {
 
-                            echo "<p>Die Session ist abgelaufen und die Daten wurden gelöscht. Sollten Ihre Eingaben nicht gespeichert worden sein, wenden Sie sich bitte mit einem Screenshot der Ihren Erfolg dokumentiert an den <strong>webmaster.</strong></p>"; 
+                            echo SESSIONOVERMORE; 
                             echo HIGHSCORELINK;
                         }
                     ?>
