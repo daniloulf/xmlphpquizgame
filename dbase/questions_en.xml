@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<questions>
+  <question>
+    <id>1</id>
+    <item>What is a newt for a species?</item>
+    <response_1>a reptile</response_1>
+    <response_2>a fish</response_2>
+    <response_3>a tail amphibian</response_3>
+    <resolving>3</resolving>
+    <score>5</score>
+  </question>
+  <question>
+    <id>2</id>
+    <item>Why can flies fly?</item>
+    <response_1>they have wings</response_1>
+    <response_2>they are psionc</response_2>
+    <response_3>they are carried by the wind</response_3>
+    <resolving>1</resolving>
+    <score>1</score>
+  </question>
+  <question>
+    <id>3</id>
+    <item>What is a hole punch for a device?</item>
+    <response_1>a weapon of the United States</response_1>
+    <response_2>A device for punching paper</response_2>
+    <response_3>Part of the tire</response_3>
+    <resolving>2</resolving>
+    <score>2</score>
+  </question>  
+  <question>
+    <id>4</id>
+    <item>What does a chipper do?</item>
+    <response_1>he messes up energy</response_1>
+    <response_2>he turns and mills</response_2>
+    <response_3>he massages</response_3>
+    <resolving>2</resolving>
+    <score>4</score>
+  </question>
+   <question>
+    <id>5</id>
+    <item>What is a checksum for a number?</item>
+    <response_1>Sum of the digits of a multi-digit number</response_1>
+    <response_2>a fractional number</response_2>
+    <response_3>Something with addition</response_3>
+    <resolving>1</resolving>
+    <score>5</score>
+  </question>
+</questions>
