@@ -75,7 +75,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                    <form class="form_name" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <label for="name"><?php echo LABELNAMETEXT; ?></label><input id="name" type="text" minlength="3" maxlength="8" require name="name" /><br />
                         <input type="submit" name="submit" value="<?php echo SUBMITNAMEANDDATA; ?>" />
                     </form>

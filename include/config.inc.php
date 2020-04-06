@@ -53,7 +53,7 @@
 
 		//Index
 		define('SUBMITBUTTONVALUE', 'Antworten prüfen');
-		define('SUBMITBUTTON', '<input type="submit" id="submit" name="submit" value="' . SUBMITBUTTONVALUE . '">');
+		define('SUBMITBUTTON', '<input class="form_button" type="submit" id="submit" name="submit" value="' . SUBMITBUTTONVALUE . '">');
 		define('HEADLINEQUESTIONSLIST', 'Beantworten Sie bitte die Fragen');
 		define('TEXTANSWERS', 'Antworten:');
 
@@ -109,7 +109,7 @@
 
 		//Index
 		define('SUBMITBUTTONVALUE', 'Check answers');
-		define('SUBMITBUTTON', '<input type="submit" id="submit" name="submit" value="' . SUBMITBUTTONVALUE . '">');
+		define('SUBMITBUTTON', '<input class="form_button" type="submit" id="submit" name="submit" value="' . SUBMITBUTTONVALUE . '">');
 		define('HEADLINEQUESTIONSLIST', 'Please answer the questions');
 		define('TEXTANSWERS', 'Answers: ');
 
