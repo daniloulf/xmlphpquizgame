@@ -18,12 +18,12 @@ function showHighscore() {
         
         echo '
             <div class="col-lg-4">
-            <h3>' . $playerName . '</h3>
-            <ul>
-                <li>Gespielt am/um: ' . $date . '  </li>
-                <li>richtige Antworten: ' . $rightA . ' </li>
-                <li>falsche Antworten: ' . $falseA . '</li>
-                <li>Punktzahl: <strong>' . $playerScore . '</strong></li>
+            <h3 class="hs_playername">' . $playerName . '</h3>
+            <ul class="hs_listing">
+                <li>' . HSDATE . $date . '  </li>
+                <li>' . HSRIGHT . $rightA . ' </li>
+                <li>' . HSFALSE . $falseA . '</li>
+                <li>' . HSSCORE . '<strong>' . $playerScore . '</strong></li>
             </ul>
             </div>
         ';

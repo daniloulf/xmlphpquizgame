@@ -2,8 +2,10 @@
 	//global config
 
 	//Pathes
-	define('XMLQUESTIONSFILE', './dbase/questions_de.xml');
 	define('XMLHIGHSCORESAVE', './dbase/highscores.xml');
+
+	//Pathes lang sens
+	define('XMLQUESTIONSFILE', './dbase/questions_de.xml');
 
 	//General
 	define('HEADPAGETITLE', 'Quiz System mit PHP und XML');
@@ -42,8 +44,13 @@
 
 	//Index
 	define('SUBMITBUTTONVALUE', 'Antworten prüfen');
+	define('SUBMITBUTTON', '<input type="submit" id="submit" name="submit" value="' . SUBMITBUTTONVALUE . '">');
 	define('HEADLINEQUESTIONSLIST', 'Beantworten Sie bitte die Fragen');
 	define('TEXTANSWERS', 'Antworten:');
 
 	//Highscore
 	define('HEADHIGHSCOREPAGE', 'Die besten Ergebnisse');
+	define('HSDATE', 'Gespielt am: ');
+	define('HSRIGHT', 'richtige Antworten: ');
+	define('HSFALSE', 'falsche Antworten: ');
+	define('HSSCORE', 'Punktzahl: ');

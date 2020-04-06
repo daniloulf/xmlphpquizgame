@@ -41,6 +41,7 @@ include('./include/testip.inc.php');
                     if (testip()) {
 				
                         questions_show(XMLQUESTIONSFILE);
+                        echo SUBMITBUTTON;
                         
                     } else {
 
@@ -49,8 +50,6 @@ include('./include/testip.inc.php');
                     }
 				
 				?>
-				
-				<input type="submit" id="submit" name="submit" value="<?php echo SUBMITBUTTONVALUE; ?>">
 				
             </form>
         </div>

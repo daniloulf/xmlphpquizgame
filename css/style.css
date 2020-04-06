@@ -12,7 +12,29 @@ h4 {
     margin:10px 7px 0 0 !important;
 } 
 
+.hs_playername {
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid black;
+    
+}
+
+ul.hs_listing li {
+    list-style: none !important;
+    margin: 0 0 10px 0;
+}
+
 /*Footer*/
+
+footer {
+    position: fixed;
+    height:80px;
+    width:100%;
+    bottom:0;
+    left:0;
+    padding:20px 0 0 0;
+    background-color: blanchedalmond;
+}
+
 footer p {
     text-align: center;
     font-size:0.75em;
