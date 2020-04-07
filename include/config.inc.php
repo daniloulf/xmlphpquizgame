@@ -4,6 +4,8 @@
 	$lang = language();
 
 	//global config
+	define('MINSCORE', 15);
+	define('MAXSCORE', 40);
 
 	//Pathes
 	define('XMLHIGHSCORESAVE', './dbase/highscores.xml');
@@ -23,8 +25,6 @@
 		define('DATEMODE', "d.m.Y");
 		define('SITELANGUAGE', 'de');
 		define('SITEDISCRIPTION', 'Dieses Quiz bietet kurzweilige Unterhaltung mit einem Allgemeinwissenstest.');
-		define('MINSCORE', 15);
-		define('MAXSCORE', 50);
 		define('WEBMASTER', '<a href="mailto:webmaster@dum-planet.de?subject=Quizprobleme">Webmaster</a>' );
 		define('YOUALLREADYPLAYED', '<p>Sie haben bereits gespielt und ein Ergebnis hinterlassen, versuchen Sie es später nochmal.</p>');
 
@@ -79,8 +79,6 @@
 		define('DATEMODE', "m.d.Y");
 		define('SITELANGUAGE', 'en');
 		define('SITEDISCRIPTION', 'This quiz provides entertainment with a general knowledge test.');
-		define('MINSCORE', 15);
-		define('MAXSCORE', 50);
 		define('WEBMASTER', '<a href="mailto:webmaster@dum-planet.de?subject=Quiz Trouble">Webmaster</a>' );
 		define('YOUALLREADYPLAYED', '<p>You have already played and left a result, please try later again.</p>');
 
