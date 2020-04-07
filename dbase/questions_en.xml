@@ -45,4 +45,67 @@
     <resolving>1</resolving>
     <score>5</score>
   </question>
+    <question>
+    <id>6</id>
+    <item>An Adverb is ... ?</item>
+    <response_1>pronoun</response_1>
+    <response_2>adage</response_2>
+    <response_3>prolog</response_3>
+    <resolving>2</resolving>
+    <score>2</score>
+  </question>
+  <question>
+    <id>7</id>
+    <item>How much alcohol kills a person?</item>
+    <response_1>500 beer</response_1>
+    <response_2>2 bottles of sparkling wine</response_2>
+    <response_3>a shot glass of ethanol</response_3>
+    <resolving>3</resolving>
+    <score>2</score>
+  </question>
+  <question>
+    <id>8</id>
+    <item>200 liters of air fit into the lungs of ...?</item>
+    <response_1>a man</response_1>
+    <response_2>a whale</response_2>
+    <response_3>a house sparrow</response_3>
+    <resolving>1</resolving>
+    <score>4</score>
+  </question>
+  <question>
+    <id>9</id>
+    <item>Caffeine is an alkaloid of which group?</item>
+    <response_1>Zinsanol</response_1>
+    <response_2>Xanthine</response_2>
+    <response_3>Poreium</response_3>
+    <resolving>2</resolving>
+    <score>5</score>
+  </question>
+  <question>
+    <id>10</id>
+    <item>Which vitamin destroys sugar?</item>
+    <response_1>C vitamin</response_1>
+    <response_2>A vitamin</response_2>
+    <response_3>B vitamin</response_3>
+    <resolving>3</resolving>
+    <score>5</score>
+  </question>
+  <question>
+    <id>11</id>
+    <item>Arthrosis is a ...?</item>
+    <response_1>flower type</response_1>
+    <response_2>chemical</response_2>
+    <response_3>disease</response_3>
+    <resolving>3</resolving>
+    <score>5</score>
+  </question>
+  <question>
+    <id>12</id>
+    <item>The german party ...?</item>
+    <response_1>is very gut</response_1>
+    <response_2>is very sophisticated</response_2>
+    <response_3>is fearful</response_3>
+    <resolving>1</resolving>
+    <score>2</score>
+  </question>
 </questions>
