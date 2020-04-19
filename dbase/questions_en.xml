@@ -7,7 +7,7 @@
     <response_2>a fish</response_2>
     <response_3>a tail amphibian</response_3>
     <resolving>3</resolving>
-    <score>5</score>
+    <score>8</score>
   </question>
   <question>
     <id>2</id>
@@ -16,7 +16,7 @@
     <response_2>they are psionc</response_2>
     <response_3>they are carried by the wind</response_3>
     <resolving>1</resolving>
-    <score>1</score>
+    <score>3</score>
   </question>
   <question>
     <id>3</id>
@@ -25,8 +25,8 @@
     <response_2>A device for punching paper</response_2>
     <response_3>Part of the tire</response_3>
     <resolving>2</resolving>
-    <score>2</score>
-  </question>  
+    <score>3</score>
+  </question>
   <question>
     <id>4</id>
     <item>What does a chipper do?</item>
@@ -36,32 +36,32 @@
     <resolving>2</resolving>
     <score>4</score>
   </question>
-   <question>
+  <question>
     <id>5</id>
     <item>What is a checksum for a number?</item>
     <response_1>Sum of the digits of a multi-digit number</response_1>
     <response_2>a fractional number</response_2>
     <response_3>Something with addition</response_3>
     <resolving>1</resolving>
-    <score>5</score>
+    <score>8</score>
   </question>
-    <question>
+  <question>
     <id>6</id>
     <item>An Adverb is ... ?</item>
     <response_1>pronoun</response_1>
     <response_2>adage</response_2>
     <response_3>prolog</response_3>
     <resolving>2</resolving>
-    <score>2</score>
+    <score>8</score>
   </question>
   <question>
     <id>7</id>
     <item>How much alcohol kills a person?</item>
-    <response_1>500 beer</response_1>
+    <response_1>1 beer</response_1>
     <response_2>2 bottles of sparkling wine</response_2>
     <response_3>a shot glass of ethanol</response_3>
     <resolving>3</resolving>
-    <score>2</score>
+    <score>6</score>
   </question>
   <question>
     <id>8</id>
@@ -79,7 +79,7 @@
     <response_2>Xanthine</response_2>
     <response_3>Poreium</response_3>
     <resolving>2</resolving>
-    <score>5</score>
+    <score>8</score>
   </question>
   <question>
     <id>10</id>

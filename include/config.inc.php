@@ -5,7 +5,7 @@
 
 	//global config
 	define('MINSCORE', 15);
-	define('MAXSCORE', 40);
+	define('MAXSCORE', 35);
 
 	//Pathes
 	define('XMLHIGHSCORESAVE', './dbase/highscores.xml');

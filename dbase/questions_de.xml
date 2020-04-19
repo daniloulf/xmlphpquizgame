@@ -7,7 +7,7 @@
     <response_2>ein Fisch</response_2>
     <response_3>ein Schwanzlurch</response_3>
     <resolving>3</resolving>
-    <score>5</score>
+    <score>8</score>
   </question>
   <question>
     <id>2</id>
@@ -16,7 +16,7 @@
     <response_2>sie sind psionisch</response_2>
     <response_3>sie werden vom Wind getragen</response_3>
     <resolving>1</resolving>
-    <score>1</score>
+    <score>3</score>
   </question>
   <question>
     <id>3</id>
@@ -25,7 +25,7 @@
     <response_2>ein Gerät zum durchstanzen von Papier</response_2>
     <response_3>ein Teil vom Reifen</response_3>
     <resolving>2</resolving>
-    <score>2</score>
+    <score>3</score>
   </question>
   <question>
     <id>4</id>
@@ -43,7 +43,7 @@
     <response_2>eine gebrochene Zahl</response_2>
     <response_3>irgendwas mit Addition</response_3>
     <resolving>1</resolving>
-    <score>5</score>
+    <score>8</score>
   </question>
   <question>
     <id>6</id>
@@ -52,16 +52,16 @@
     <response_2>Umstandswort</response_2>
     <response_3>Fürwort</response_3>
     <resolving>2</resolving>
-    <score>4</score>
+    <score>8</score>
   </question>
   <question>
     <id>7</id>
     <item>Wieviel Alkohol tötet einen Menschen?</item>
-    <response_1>500 Kästen Bier</response_1>
+    <response_1>1 Kasten Bier</response_1>
     <response_2>2 Flaschen Sekt</response_2>
     <response_3>ein Schnapsglas Ethanol</response_3>
     <resolving>3</resolving>
-    <score>2</score>
+    <score>6</score>
   </question>
   <question>
     <id>8</id>
@@ -79,11 +79,11 @@
     <response_2>Xanthine</response_2>
     <response_3>Poreium</response_3>
     <resolving>2</resolving>
-    <score>5</score>
+    <score>8</score>
   </question>
   <question>
     <id>10</id>
-    <item>Welches Vitamin zerstört Zucker?</item>
+    <item>Zucker zerstört welches Vitamin?</item>
     <response_1>C-Vitamine</response_1>
     <response_2>A-Vitamine</response_2>
     <response_3>B-Vitamine</response_3>
