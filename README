@@ -19,3 +19,7 @@ Further you can change the text Messessages and pathes in the "inc" folder where
 # See it working
 
 https://dum-planet.de/quiz
+
+# PHP
+
+For testing or working propose you be need a server that supports PHP (+7.0). It works with xampp, wamp, laragon and other local servers beneath WINDOWS. Other devices be need an installed Apache server. --> Copy files into the http (or www) drawer of your webserver installation path and browse to http://localhost/"copied files" if been started the server.
